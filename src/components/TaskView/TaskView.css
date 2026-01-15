@@ -1,0 +1,69 @@
+.task-view-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.task-view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-view-title {
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.task-view-description {
+  color: var(--color-text-muted);
+  margin: 0 0 24px 0;
+  font-size: 1.25rem;
+}
+
+.task-view-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+}
+
+.task-view-panel {
+  background-color: var(--color-bg-elevated);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.task-view-panel-title {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin: 0;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.task-view-panel-content {
+  padding: 32px;
+  flex: 1;
+  overflow-y: auto;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-view-panel-content > div {
+  transform: scale(2);
+}
