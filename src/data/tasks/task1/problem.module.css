@@ -28,13 +28,13 @@
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.15s ease;
+
+  & > svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+  }
 }
 
 .btn:hover {
-}
-
-.btn svg {
-  display: block;
-  width: 1em;
-  height: 1em;
 }
