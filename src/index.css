@@ -13,6 +13,21 @@
   --color-text-muted: #666666;
   --color-text-subtle: #888888;
 
+
+  --color-bg-accent: #0ea5e9;
+  --color-text-accent: #ffffff;
+
+  --color-bg-accent-50: #0ea5e91a;
+  --color-bg-accent-100: #0ea5e926;
+  --color-bg-accent-200: #0ea5e93d;
+  --color-bg-accent-300: #0ea5e952;
+  --color-bg-accent-400: #0ea5e969;
+  --color-bg-accent-500: #0ea5e980;
+  --color-bg-accent-600: #0ea5e996;
+  --color-bg-accent-700: #0ea5e9ac;
+  --color-bg-accent-800: #0ea5e9c3;
+  --color-bg-accent-900: #0ea5e9d9;
+
   /* Typography */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;

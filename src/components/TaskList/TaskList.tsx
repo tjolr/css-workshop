@@ -19,13 +19,21 @@ function TaskItem({
   isSubtask?: boolean;
 }) {
   const hasSubtasks = task.subtasks && task.subtasks.length > 0;
-  const isClickable = task.template !== undefined;
+  const isClickable = task.template !== undefined || hasSubtasks;
+
+  const handleClick = () => {
+    if (hasSubtasks) {
+      onSelectTask(task.subtasks![0].id);
+    } else if (task.template !== undefined) {
+      onSelectTask(task.id);
+    }
+  };
 
   return (
     <li>
       <button
         className={`task-list-item ${selectedTaskId === task.id ? 'active' : ''} ${isSubtask ? 'subtask' : ''} ${!isClickable ? 'category' : ''}`}
-        onClick={() => isClickable && onSelectTask(task.id)}
+        onClick={handleClick}
         disabled={!isClickable}
       >
         {task.title}

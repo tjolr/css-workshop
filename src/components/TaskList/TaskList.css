@@ -19,22 +19,24 @@
 .task-list-item {
   width: 100%;
   padding: 12px 20px;
-  background: none;
   border: none;
   color: var(--color-text-muted);
   font-size: 0.9rem;
   text-align: left;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: all 0.2s ease;
+  background: none;
 }
 
 .task-list-item:hover {
   color: var(--color-text);
+  background-color: var(--color-bg-accent-400);
 }
 
 .task-list-item.active {
   color: var(--color-text);
   border-left: 2px solid var(--color-text);
+  background-color: var(--color-bg-accent-300);
 }
 
 .task-list-item.category {
