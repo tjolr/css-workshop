@@ -1,0 +1,42 @@
+/* Task 3.1: Notification Badge */
+/* Position the red badge in the top-right corner of the icon button */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #1c1c1c;
+  border-radius: 8px;
+}
+
+.iconButton {
+  width: 50px;
+  height: 50px;
+  background: #3a3a3a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  /* TODO: Add positioning so the badge can be positioned relative to this */
+
+}
+
+.bellIcon {
+  width: 24px;
+  height: 24px;
+  color: #d3d3d3;
+}
+
+.badge {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  background: #e94560;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  /* TODO: Position this in the top-right corner of the icon button */
+
+}

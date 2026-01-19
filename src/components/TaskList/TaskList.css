@@ -36,3 +36,24 @@
   color: var(--color-text);
   border-left: 2px solid var(--color-text);
 }
+
+.task-list-item.category {
+  color: var(--color-text-subtle);
+  font-weight: 500;
+  cursor: default;
+}
+
+.task-list-item.category:hover {
+  color: var(--color-text-subtle);
+}
+
+.task-list-subtasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-list-item.subtask {
+  padding-left: 36px;
+  font-size: 0.85rem;
+}

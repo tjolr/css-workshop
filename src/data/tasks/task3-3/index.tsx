@@ -2,11 +2,11 @@ import type { Task } from "../../../types/task";
 import { problem } from "./problem";
 import { solution } from "./solution";
 
-export const task2: Task = {
-  id: "task-2",
-  title: "Task 2: Glassmorphism",
+export const task3_3: Task = {
+  id: "task-3-3",
+  title: "3.3 Input with Icons",
   description:
-    "Create a frosted glass card effect using backdrop-filter and semi-transparent backgrounds.",
+    "Position icons inside an input field - search icon on the left, clear button on the right.",
   template: problem,
   solution: solution,
 };

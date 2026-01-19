@@ -4,6 +4,7 @@ export interface Task {
   id: string;
   title: string;
   description?: string;
-  template: ReactNode;
-  solution: ReactNode;
+  template?: ReactNode;
+  solution?: ReactNode;
+  subtasks?: Task[];
 }

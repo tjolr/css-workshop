@@ -1,0 +1,58 @@
+/* Task 3.2: Tooltip Positioning */
+/* Position the tooltip above the button, centered */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+}
+
+.wrapper {
+  /* Add position relative here */
+  position: relative;
+}
+
+.button {
+  padding: 12px 24px;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background: var(--color-bg-subtle);
+}
+
+.tooltip {
+  padding: 8px 12px;
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-size: 0.75rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-bottom: 8px;
+  
+  /* Position this above the button, centered horizontally 
+  You need to use all these kewords:
+  - position
+  - bottom
+  - left
+  - transform: translateX(-50%)
+  - opacity
+  - visibility
+  - transition
+  */
+}
+
+
+.button:hover .tooltip {
+  /* Show the tooltip using these keywords:
+  - opacity
+  - visibility
+  */
+}
