@@ -5,9 +5,7 @@ import { notificationBadgeTask } from "./tasks/positioning-notification-badge";
 import { tooltipTask } from "./tasks/positioning-tooltip";
 import { inputIconsTask } from "./tasks/positioning-input-icons";
 import { userAvatarsTask } from "./tasks/positioning-user-avatars";
-import { centeringTask } from "./tasks/flexbox-centering";
-import { cardGridTask } from "./tasks/flexbox-card-grid";
-import { holyGrailTask } from "./tasks/flexbox-holy-grail";
+import { nestingCardTask } from "./tasks/nesting-card";
 
 const positioningTask: Task = {
   id: "positioning",
@@ -15,10 +13,11 @@ const positioningTask: Task = {
   subtasks: [notificationBadgeTask, tooltipTask, inputIconsTask, userAvatarsTask],
 };
 
-const flexboxGridTask: Task = {
-  id: "flexbox-vs-grid",
-  title: "Flexbox vs Grid",
-  subtasks: [centeringTask, cardGridTask, holyGrailTask],
+const nestingTask: Task = {
+  id: "nesting",
+  title: "Nesting",
+  description: "Watch first: https://www.youtube.com/watch?v=h4Xp1QgNkhU",
+  subtasks: [nestingCardTask],
 };
 
-export const tasks: Task[] = [transformTask, glassmorphismTask, positioningTask, flexboxGridTask];
+export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask];

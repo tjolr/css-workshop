@@ -1,3 +1,5 @@
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { Task } from '../../types/task';
 import './TaskView.css';
 
@@ -19,6 +21,11 @@ export function TaskView({ task }: TaskViewProps) {
       <h1 className="task-view-title">{task.title}</h1>
       {task.description && (
         <p className="task-view-description">{task.description}</p>
+      )}
+      {task.link && (
+        <a className="task-view-link" href={task.link} target="_blank" rel="noopener noreferrer">
+           Preliminary knowledge <FontAwesomeIcon icon={faExternalLink} />
+        </a>
       )}
       <div className="task-view-panels">
         <div className="task-view-panel">

@@ -64,6 +64,10 @@
   align-items: center;
 }
 
-.task-view-panel-content > div {
-  transform: scale(2);
+.task-view-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
 }

@@ -1,0 +1,75 @@
+/* Nested Card Styling */
+/* Use CSS nesting to style all child elements from within the .card selector */
+/* This keeps related styles grouped together and shows the DOM hierarchy */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 320px;
+
+  /* TODO: Use CSS nesting to style .header inside .card */
+  /* Hint: Use & .header { ... } or just .header { ... } */
+}
+
+/* Remove these and nest them inside .card instead: */
+.header {
+  background: #f8fafc;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.badge {
+  background: #3b82f6;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.body {
+  padding: 16px;
+}
+
+.text {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.footer {
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.button {
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: white;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.buttonPrimary {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
