@@ -1,6 +1,7 @@
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { Task } from '../../types/task';
+import { Homepage } from '../Homepage';
 import './TaskView.css';
 
 interface TaskViewProps {
@@ -9,11 +10,12 @@ interface TaskViewProps {
 
 export function TaskView({ task }: TaskViewProps) {
   if (!task) {
-    return (
-      <div className="task-view-empty">
-        <p>Select a task from the list to get started</p>
-      </div>
-    );
+    return <Homepage />;
+  }
+
+  // Render content page (intro pages, etc.)
+  if (task.content) {
+    return <div className="task-view task-view-content">{task.content}</div>;
   }
 
   return (

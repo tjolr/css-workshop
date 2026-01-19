@@ -6,6 +6,7 @@ import { tooltipTask } from "./tasks/positioning-tooltip";
 import { inputIconsTask } from "./tasks/positioning-input-icons";
 import { userAvatarsTask } from "./tasks/positioning-user-avatars";
 import { nestingCardTask } from "./tasks/nesting-card";
+import { preprocessorsIntroTask } from "./tasks/preprocessors-intro";
 
 const positioningTask: Task = {
   id: "positioning",
@@ -20,4 +21,10 @@ const nestingTask: Task = {
   subtasks: [nestingCardTask],
 };
 
-export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask];
+const preprocessorsTask: Task = {
+  id: "preprocessors",
+  title: "Preprocessors",
+  subtasks: [preprocessorsIntroTask],
+};
+
+export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask, preprocessorsTask];

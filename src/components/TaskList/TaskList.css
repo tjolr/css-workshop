@@ -8,6 +8,14 @@
   font-weight: 500;
   padding: 0 20px;
   margin: 0 0 20px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.task-list-title:hover {
+  opacity: 0.8;
 }
 
 .task-list-items {

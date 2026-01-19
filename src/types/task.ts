@@ -7,5 +7,6 @@ export interface Task {
   link?: string;
   template?: ReactNode;
   solution?: ReactNode;
+  content?: ReactNode;
   subtasks?: Task[];
 }

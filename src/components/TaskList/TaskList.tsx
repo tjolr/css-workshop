@@ -4,7 +4,7 @@ import './TaskList.css';
 interface TaskListProps {
   tasks: Task[];
   selectedTaskId: string | null;
-  onSelectTask: (taskId: string) => void;
+  onSelectTask: (taskId: string | null) => void;
 }
 
 function TaskItem({
@@ -58,7 +58,9 @@ function TaskItem({
 export function TaskList({ tasks, selectedTaskId, onSelectTask }: TaskListProps) {
   return (
     <nav className="task-list">
-      <h2 className="task-list-title">CSS Workshop</h2>
+      <button className="task-list-title" onClick={() => onSelectTask(null)}>
+        CSS Workshop
+      </button>
       <ul className="task-list-items">
         {tasks.map((task) => (
           <TaskItem
