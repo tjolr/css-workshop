@@ -2,11 +2,11 @@ import type { Task } from "../../../types/task";
 import { problem } from "./problem";
 import { solution } from "./solution";
 
-export const task3_2: Task = {
-  id: "task-3-2",
-  title: "3.2 Tooltip",
+export const transformTask: Task = {
+  id: "transform",
+  title: "Transform",
   description:
-    "Position a tooltip above a button, centered horizontally with an arrow.",
+    "Recreate the Slack emoji reaction popup using CSS transforms, transition and background colors",
   template: problem,
   solution: solution,
 };

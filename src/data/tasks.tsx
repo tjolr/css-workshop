@@ -1,15 +1,24 @@
 import type { Task } from "../types/task";
-import { task1 } from "./tasks/task1";
-import { task2 } from "./tasks/task2";
-import { task3_1 } from "./tasks/task3-1";
-import { task3_2 } from "./tasks/task3-2";
-import { task3_3 } from "./tasks/task3-3";
-import { task3_4 } from "./tasks/task3-4";
+import { transformTask } from "./tasks/transform";
+import { glassmorphismTask } from "./tasks/glassmorphism";
+import { notificationBadgeTask } from "./tasks/positioning-notification-badge";
+import { tooltipTask } from "./tasks/positioning-tooltip";
+import { inputIconsTask } from "./tasks/positioning-input-icons";
+import { userAvatarsTask } from "./tasks/positioning-user-avatars";
+import { centeringTask } from "./tasks/flexbox-centering";
+import { cardGridTask } from "./tasks/flexbox-card-grid";
+import { holyGrailTask } from "./tasks/flexbox-holy-grail";
 
-const task3: Task = {
-  id: "task-3",
-  title: "Task 3: Positioning",
-  subtasks: [task3_1, task3_2, task3_3, task3_4],
+const positioningTask: Task = {
+  id: "positioning",
+  title: "Positioning",
+  subtasks: [notificationBadgeTask, tooltipTask, inputIconsTask, userAvatarsTask],
 };
 
-export const tasks: Task[] = [task1, task2, task3];
+const flexboxGridTask: Task = {
+  id: "flexbox-vs-grid",
+  title: "Flexbox vs Grid",
+  subtasks: [centeringTask, cardGridTask, holyGrailTask],
+};
+
+export const tasks: Task[] = [transformTask, glassmorphismTask, positioningTask, flexboxGridTask];

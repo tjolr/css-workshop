@@ -1,0 +1,59 @@
+/* Holy Grail Layout */
+/* Create the classic "Holy Grail" layout using CSS Grid */
+/* Layout: header spans full width, sidebar on left, main content, footer spans full width */
+
+.container {
+  min-height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 120px 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  background: #2d3748;
+  color: white;
+  padding: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: header;
+}
+
+.sidebar {
+  background: #4a5568;
+  color: white;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: sidebar;
+}
+
+.main {
+  background: #edf2f7;
+  color: #2d3748;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  grid-area: main;
+}
+
+.footer {
+  background: #2d3748;
+  color: white;
+  padding: 12px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: footer;
+}

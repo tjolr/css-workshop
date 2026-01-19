@@ -1,0 +1,39 @@
+/* Card Grid */
+/* Create a responsive 2-column grid of cards using CSS Grid */
+
+.container {
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.grid {
+  /* TODO: Create a 2-column grid layout with a 16px gap */
+
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  /* TODO: Use flexbox to arrange card content in a column and center items */
+
+}
+
+.cardIcon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
