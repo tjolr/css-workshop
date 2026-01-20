@@ -16,27 +16,19 @@ export const MediaContainerQueries = () => (
       <h2>Oppgaver</h2>
 
       <div className="question-card">
-        <h3>1. Hva er forskjellen mellom Media Queries og Container Queries?</h3>
-        <p className="hint">Tenk på hva hver av dem reagerer på - viewport vs. forelder-element.</p>
+        <h3>1. Hva er media queries?</h3>
       </div>
 
       <div className="question-card">
-        <h3>2. Hva må til for at et element skal kunne bruke Container Queries?</h3>
-        <p className="hint">Hvilken CSS-egenskap må settes på forelder-elementet?</p>
-      </div>
-      <div className="question-card">
-        <h3>3. Hvorfor er Container Queries bedre for gjenbrukbare komponenter?</h3>
-        <p className="hint">Tenk på et kort-komponent som brukes både i sidebar og hovedinnhold.</p>
+        <h3>2. Hva er container queries, og hvilke properties kreves for å bruke det?</h3>
       </div>
 
       <div className="question-card">
-        <h3>4. Lag et kort-komponent som endrer layout basert på forelderens bredde</h3>
-        <p className="hint">Kortet skal vise bilde og tekst vertikalt når smalt, horisontalt når bredt.</p>
+        <h3>3. Når skal man bruke media vs container queries?</h3>
       </div>
 
-      <div className="question-card">
-        <h3>5. Hva er <code>container-type</code> og hvilke verdier kan den ha?</h3>
-        <p className="hint">Undersøk forskjellen mellom <code>inline-size</code>, <code>size</code>, og <code>normal</code>.</p>
+      <div className="question-card bonus">
+        <h3>Bonusoppgave: Lag et dashboard med kort, og forandre på kortene ved hjelp av container queries</h3>
       </div>
     </section>
 
