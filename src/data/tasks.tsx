@@ -10,7 +10,9 @@ import { nestingCardTask } from "./tasks/nesting-card";
 import { flexboxVsGridIntroTask } from "./tasks/flexbox-vs-grid-intro";
 import { flexboxNavbarTask } from "./tasks/flexbox-navbar";
 import { gridDashboardTask } from "./tasks/grid-dashboard";
-import { preprocessorsIntroTask } from "./tasks/preprocessors-intro";
+import { mediaContainerTask } from "./tasks/group-media-container";
+import { groupPreprocessorsTask } from "./tasks/group-preprocessors";
+import { advancedSelectorsTask } from "./tasks/group-advanced-selectors";
 
 const positioningTask: Task = {
   id: "positioning",
@@ -30,10 +32,10 @@ const flexboxVsGridTask: Task = {
   subtasks: [flexboxVsGridIntroTask, flexboxNavbarTask, gridDashboardTask],
 };
 
-const preprocessorsTask: Task = {
-  id: "preprocessors",
-  title: "Preprocessors",
-  subtasks: [preprocessorsIntroTask],
+const gruppeoppgaverTask: Task = {
+  id: "gruppeoppgaver",
+  title: "Gruppeoppgaver",
+  subtasks: [mediaContainerTask, groupPreprocessorsTask, advancedSelectorsTask],
 };
 
-export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask, flexboxVsGridTask, preprocessorsTask];
+export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask, flexboxVsGridTask, gruppeoppgaverTask];
