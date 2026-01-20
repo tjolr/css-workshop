@@ -48,7 +48,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
 }
 
@@ -102,9 +101,8 @@
 }
 
 .task-icon {
-  color: #a855f7;
+  color: var(--color-text-subtle);
   font-size: 0.85em;
-  opacity: 0.8;
 }
 
 .task-list-subtasks {
