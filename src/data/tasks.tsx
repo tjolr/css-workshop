@@ -5,6 +5,7 @@ import { notificationBadgeTask } from "./tasks/positioning-notification-badge";
 import { tooltipTask } from "./tasks/positioning-tooltip";
 import { inputIconsTask } from "./tasks/positioning-input-icons";
 import { userAvatarsTask } from "./tasks/positioning-user-avatars";
+import { nestingIntroTask } from "./tasks/nesting-intro";
 import { nestingCardTask } from "./tasks/nesting-card";
 import { flexboxVsGridIntroTask } from "./tasks/flexbox-vs-grid-intro";
 import { flexboxNavbarTask } from "./tasks/flexbox-navbar";
@@ -20,8 +21,7 @@ const positioningTask: Task = {
 const nestingTask: Task = {
   id: "nesting",
   title: "Nesting",
-  description: "Watch first: https://www.youtube.com/watch?v=h4Xp1QgNkhU",
-  subtasks: [nestingCardTask],
+  subtasks: [nestingIntroTask, nestingCardTask],
 };
 
 const flexboxVsGridTask: Task = {
