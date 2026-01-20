@@ -39,33 +39,72 @@
   width: 100%;
   padding: 12px 20px;
   border: none;
-  color: var(--color-text-muted);
+  color: var(--color-text-subtle);
   font-size: 0.9rem;
   text-align: left;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   background: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.task-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, rgba(34, 211, 238, 0.15) 0%, transparent 100%);
+  transition: width 0.3s ease;
 }
 
 .task-list-item:hover {
-  color: var(--color-text);
-  background-color: var(--color-bg-accent-400);
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.05);
+  padding-left: 24px;
+}
+
+.task-list-item:hover::before {
+  width: 4px;
+  background: linear-gradient(180deg, #22d3ee 0%, #a855f7 100%);
 }
 
 .task-list-item.active {
   color: var(--color-text);
-  border-left: 2px solid var(--color-text);
-  background-color: var(--color-bg-accent-300);
+  background: linear-gradient(90deg, rgba(34, 211, 238, 0.1) 0%, transparent 100%);
+  padding-left: 24px;
+}
+
+.task-list-item.active::before {
+  width: 4px;
+  background: linear-gradient(180deg, #22d3ee 0%, #a855f7 100%);
 }
 
 .task-list-item.category {
-  color: var(--color-text-subtle);
+  color: var(--color-text);
   font-weight: 500;
   cursor: default;
 }
 
 .task-list-item.category:hover {
-  color: var(--color-text-subtle);
+  color: var(--color-text);
+  background: none;
+  padding-left: 20px;
+}
+
+.task-list-item.category:hover::before {
+  width: 0;
+}
+
+.task-icon {
+  color: #a855f7;
+  font-size: 0.85em;
+  opacity: 0.8;
 }
 
 .task-list-subtasks {

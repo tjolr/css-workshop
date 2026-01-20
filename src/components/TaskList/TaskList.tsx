@@ -1,4 +1,6 @@
 import type { Task } from '../../types/task';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import './TaskList.css';
 
 interface TaskListProps {
@@ -36,7 +38,8 @@ function TaskItem({
         onClick={handleClick}
         disabled={!isClickable}
       >
-        {task.title}
+        <span>{task.title}</span>
+        {task.id === 'gruppeoppgaver' && <FontAwesomeIcon icon={faUsers} className="task-icon" />}
       </button>
       {hasSubtasks && (
         <ul className="task-list-subtasks">
