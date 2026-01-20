@@ -13,6 +13,9 @@ import { gridDashboardTask } from "./tasks/grid-dashboard";
 import { mediaContainerTask } from "./tasks/group-media-container";
 import { groupPreprocessorsTask } from "./tasks/group-preprocessors";
 import { advancedSelectorsTask } from "./tasks/group-advanced-selectors";
+import { clampSizingTask } from "./tasks/clamp-sizing";
+import { scrollSnapTask } from "./tasks/scroll-snap";
+import { textOverflowTask } from "./tasks/text-overflow";
 
 const positioningTask: Task = {
   id: "positioning",
@@ -38,4 +41,10 @@ const gruppeoppgaverTask: Task = {
   subtasks: [mediaContainerTask, groupPreprocessorsTask, advancedSelectorsTask],
 };
 
-export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask, flexboxVsGridTask, gruppeoppgaverTask];
+const utilsTask: Task = {
+  id: "utils",
+  title: "Utils",
+  subtasks: [clampSizingTask, scrollSnapTask, textOverflowTask],
+};
+
+export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask, flexboxVsGridTask, utilsTask, gruppeoppgaverTask];

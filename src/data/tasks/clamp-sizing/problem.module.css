@@ -1,0 +1,65 @@
+/* Task: Responsive Card with clamp() */
+/* Use clamp() to create a card that scales between min and max width */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  /* TODO: Bruk clamp() for å sette bredden
+     - Minimum: 300px
+     - Optimal: 50vw
+     - Maximum: 600px */
+  width: 100%;
+}
+
+.cardHeader {
+  background: linear-gradient(90deg, #e94560 0%, #0f3460 100%);
+  padding: 20px;
+}
+
+.cardTitle {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardText {
+  color: #d3d3d3;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.cardText:last-child {
+  margin-bottom: 0;
+}
+
+.cardFooter {
+  padding: 16px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.button {
+  background: #e94560;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: #d63651;
+}

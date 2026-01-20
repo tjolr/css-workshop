@@ -1,0 +1,59 @@
+/* Task: Horizontal Gallery with Scroll Snap */
+/* Create a gallery that snaps to each image when scrolling */
+
+.container {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.title {
+  color: white;
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+
+.hint {
+  color: #888;
+  margin: 0 0 16px 0;
+  font-size: 0.875rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 8px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 280px;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+}
+
+.slideLabel {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Skjul scrollbar for et renere utseende */
+.gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background: #1a1a2e;
+  border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: #e94560;
+  border-radius: 4px;
+}

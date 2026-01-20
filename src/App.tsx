@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { Layout } from './components/Layout/Layout';
-import { TaskList } from './components/TaskList/TaskList';
-import { TaskView } from './components/TaskView/TaskView';
-import { tasks } from './data/tasks';
-import type { Task } from './types/task';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { Layout } from "./components/Layout/Layout";
+import { TaskList } from "./components/TaskList/TaskList";
+import { TaskView } from "./components/TaskView/TaskView";
+import { tasks } from "./data/tasks";
+import type { Task } from "./types/task";
 
 function findTask(tasks: Task[], id: string | null): Task | null {
   if (!id) return null;
