@@ -16,32 +16,19 @@ export const Preprocessors = () => (
       <h2>Oppgaver</h2>
 
       <div className="question-card">
-        <h3>1. Hva er en CSS preprocessor og nevn noen eksempler</h3>
-        <p className="hint">Tenk på Sass, Less, Stylus - hva har de til felles?</p>
+        <h3>1. Hva gjør CSS-preprosessorer som SCSS og Less?</h3>
       </div>
 
       <div className="question-card">
-        <h3>2. Hva er fordelen med variabler i Sass sammenlignet med CSS custom properties?</h3>
-        <p className="hint">Tenk på når verdiene evalueres (kompileringstid vs. kjøretid).</p>
+        <h3>2. Hva kan man gjøre med en preprosessor som ikke går an med vanlig CSS?</h3>
       </div>
 
       <div className="question-card">
-        <h3>3. Forklar hva en mixin er og når du ville brukt en</h3>
-        <p className="hint">Mixins er som gjenbrukbare "funksjoner" for CSS.</p>
-      </div>
-      <div className="question-card">
-        <h3>4. Hva er forskjellen mellom <code>@extend</code> og <code>@mixin</code> i Sass?</h3>
-        <p className="hint">Hvordan påvirker de den kompilerte CSS-en forskjellig?</p>
+        <h3>3. Hvordan fungerer CSS-in-JS løsninger som styled-components, vanilla-extract og panda-css?</h3>
       </div>
 
       <div className="question-card">
-        <h3>5. Hva er mulig å gjøre med en preprocessor som IKKE er mulig med vanlig CSS i 2026?</h3>
-        <p className="hint">CSS har fått mange nye features - variabler, nesting, :has(). Hva gjenstår?</p>
-      </div>
-
-      <div className="question-card">
-        <h3>6. Hvordan fungerer Sass partials og <code>@use</code> vs <code>@import</code>?</h3>
-        <p className="hint">Hvorfor anbefales @use over @import i moderne Sass?</p>
+        <h3>4. Hvordan påvirkes ytelse av build vs runtime i CSS-in-JS løsningene?</h3>
       </div>
     </section>
 
