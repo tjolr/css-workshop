@@ -17,7 +17,7 @@ const articles = [
   },
   {
     id: 3,
-    title: "CSS Custom Properties",
+    title: "CSS Custom Properties which might have a very long title",
     excerpt:
       "CSS variabler, også kjent som custom properties, revolusjonerer måten vi skriver CSS på. De gir oss muligheten til å definere gjenbrukbare verdier som kan oppdateres dynamisk med JavaScript, noe som åpner for kraftige tema-systemer og interaktive design.",
   },

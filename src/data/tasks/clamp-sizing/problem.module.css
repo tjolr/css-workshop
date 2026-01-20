@@ -22,12 +22,25 @@
 .cardHeader {
   background: linear-gradient(90deg, #e94560 0%, #0f3460 100%);
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cardTitle {
   margin: 0;
   color: white;
   font-size: 1.5rem;
+}
+
+.widthIndicator {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: monospace;
 }
 
 .cardContent {
