@@ -3,19 +3,30 @@
 }
 
 .task-list-title {
+  display: block;
+  width: 100%;
   color: var(--color-text);
   font-size: 1rem;
   font-weight: 500;
-  padding: 0 20px;
+  padding: 12px 20px;
   margin: 0 0 20px 0;
   background: none;
   border: none;
   cursor: pointer;
   text-align: left;
+  transition: all 0.3s ease;
 }
 
 .task-list-title:hover {
-  opacity: 0.8;
+  background: linear-gradient(90deg, rgba(34, 211, 238, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+}
+
+.task-list-title:hover span,
+.task-list-title:hover {
+  background: linear-gradient(90deg, #22d3ee 0%, #a855f7 50%, #ec4899 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .task-list-items {

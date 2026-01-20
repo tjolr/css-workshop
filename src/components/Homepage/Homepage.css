@@ -29,30 +29,30 @@
   width: 400px;
   height: 400px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  top: calc(10% + (var(--mouse-y) - 50) * 0.5px);
-  left: calc(20% + (var(--mouse-x) - 50) * 0.4px);
+  top: calc(10% + (var(--mouse-y) - 50) * 2px);
+  left: calc(20% + (var(--mouse-x) - 50) * 2px);
   animation: float1 8s ease-in-out infinite;
-  transition: top 0.8s ease-out, left 0.8s ease-out;
+  transition: top 0.3s ease-out, left 0.3s ease-out;
 }
 
 .homepage-gradient-2 {
   width: 350px;
   height: 350px;
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  top: calc(50% + (var(--mouse-y) - 50) * -0.4px);
-  right: calc(15% + (var(--mouse-x) - 50) * -0.5px);
+  top: calc(50% + (var(--mouse-y) - 50) * -1.5px);
+  right: calc(15% + (var(--mouse-x) - 50) * -1.8px);
   animation: float2 10s ease-in-out infinite;
-  transition: top 1s ease-out, right 1s ease-out;
+  transition: top 0.4s ease-out, right 0.4s ease-out;
 }
 
 .homepage-gradient-3 {
   width: 300px;
   height: 300px;
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  bottom: calc(10% + (var(--mouse-y) - 50) * -0.3px);
-  left: calc(30% + (var(--mouse-x) - 50) * 0.6px);
+  bottom: calc(10% + (var(--mouse-y) - 50) * -1.2px);
+  left: calc(30% + (var(--mouse-x) - 50) * 2.5px);
   animation: float3 12s ease-in-out infinite;
-  transition: bottom 1.2s ease-out, left 1.2s ease-out;
+  transition: bottom 0.5s ease-out, left 0.5s ease-out;
 }
 
 .homepage-glow {
@@ -69,7 +69,7 @@
 
 .homepage-title {
   position: relative;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   margin: 0;
@@ -92,8 +92,8 @@
 .homepage-subtitle {
   position: relative;
   margin-top: 24px;
-  color: var(--color-text-accent);
-  font-size: 1.1rem;
+  color: var(--color-text-subtle);
+  font-size: 2rem;
   letter-spacing: 0.05em;
 }
 

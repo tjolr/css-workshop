@@ -29,8 +29,8 @@ export function Homepage() {
         <div className="homepage-gradient homepage-gradient-3" />
         <div className="homepage-glow" />
       </div>
-      <h1 className="homepage-title">CSS WORKSHOP</h1>
-      <p className="homepage-subtitle">Select a task from the sidebar to begin</p>
+      <h1 className="homepage-title">DEN OM CSS</h1>
+      <p className="homepage-subtitle">Frontend nørdsa januar 2026</p>
     </div>
   );
 }

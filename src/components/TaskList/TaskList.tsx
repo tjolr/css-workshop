@@ -59,7 +59,7 @@ export function TaskList({ tasks, selectedTaskId, onSelectTask }: TaskListProps)
   return (
     <nav className="task-list">
       <button className="task-list-title" onClick={() => onSelectTask(null)}>
-        CSS Workshop
+        DEN OM CSS
       </button>
       <ul className="task-list-items">
         {tasks.map((task) => (
