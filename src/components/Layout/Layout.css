@@ -1,6 +1,6 @@
 .layout {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .layout-sidebar {
@@ -8,6 +8,7 @@
   flex-shrink: 0;
   background-color: var(--color-bg);
   border-right: 1px solid var(--color-border);
+  overflow-y: auto;
 }
 
 .layout-content {
