@@ -19,12 +19,12 @@ function TaskItem({
   isSubtask?: boolean;
 }) {
   const hasSubtasks = task.subtasks && task.subtasks.length > 0;
-  const isClickable = task.template !== undefined || hasSubtasks;
+  const isClickable = task.template !== undefined || task.content !== undefined || hasSubtasks;
 
   const handleClick = () => {
     if (hasSubtasks) {
       onSelectTask(task.subtasks![0].id);
-    } else if (task.template !== undefined) {
+    } else if (task.template !== undefined || task.content !== undefined) {
       onSelectTask(task.id);
     }
   };

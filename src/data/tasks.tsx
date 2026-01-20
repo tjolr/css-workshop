@@ -6,6 +6,9 @@ import { tooltipTask } from "./tasks/positioning-tooltip";
 import { inputIconsTask } from "./tasks/positioning-input-icons";
 import { userAvatarsTask } from "./tasks/positioning-user-avatars";
 import { nestingCardTask } from "./tasks/nesting-card";
+import { flexboxVsGridIntroTask } from "./tasks/flexbox-vs-grid-intro";
+import { flexboxNavbarTask } from "./tasks/flexbox-navbar";
+import { gridDashboardTask } from "./tasks/grid-dashboard";
 import { preprocessorsIntroTask } from "./tasks/preprocessors-intro";
 
 const positioningTask: Task = {
@@ -21,10 +24,16 @@ const nestingTask: Task = {
   subtasks: [nestingCardTask],
 };
 
+const flexboxVsGridTask: Task = {
+  id: "flexbox-vs-grid",
+  title: "Flexbox vs Grid",
+  subtasks: [flexboxVsGridIntroTask, flexboxNavbarTask, gridDashboardTask],
+};
+
 const preprocessorsTask: Task = {
   id: "preprocessors",
   title: "Preprocessors",
   subtasks: [preprocessorsIntroTask],
 };
 
-export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask, preprocessorsTask];
+export const tasks: Task[] = [nestingTask, transformTask, glassmorphismTask, positioningTask, flexboxVsGridTask, preprocessorsTask];

@@ -1,0 +1,43 @@
+/* Task: Navigation Bar with Flexbox */
+/* Create a navbar with logo on the left and menu items on the right */
+
+.navbar {
+  width: 100%;
+  background: #1a1a2e;
+  padding: 16px 24px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e94560;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.menuItem {
+  /* No changes needed */
+}
+
+.menuLink {
+  color: #d3d3d3;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.menuLink:hover {
+  background: rgba(233, 69, 96, 0.2);
+  color: #e94560;
+}

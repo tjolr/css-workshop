@@ -1,0 +1,65 @@
+/* Task: Dashboard Card Grid */
+/* Create a dashboard layout using CSS Grid with cards of varying sizes */
+
+.dashboard {
+  padding: 20px;
+  background: #1a1a2e;
+  border-radius: 12px;
+  /* TODO: Use CSS Grid to create a 3-column layout with gap */
+
+}
+
+.card {
+  background: #16213e;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+.cardLarge {
+  /* TODO: Make this card span 2 columns */
+
+}
+
+.cardTall {
+  /* TODO: Make this card span 2 rows */
+
+}
+
+.cardTitle {
+  margin: 0 0 12px 0;
+  font-size: 0.875rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardValue {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e94560;
+}
+
+.cardSubtext {
+  margin: 8px 0 0 0;
+  font-size: 0.875rem;
+  color: #4ade80;
+}
+
+.activityList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.activityList li {
+  padding: 8px 0;
+  color: #d3d3d3;
+  font-size: 0.875rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.activityList li:last-child {
+  border-bottom: none;
+}
