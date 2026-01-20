@@ -6,7 +6,7 @@ export const gridDashboardTask: Task = {
   id: "grid-dashboard",
   title: "Dashboard Cards",
   description:
-    "Create a dashboard layout with cards of varying sizes using CSS Grid, with some cards spanning multiple columns or rows.",
+    "Lag et dashboard-oppsett med kort i varierende størrelser ved hjelp av CSS Grid, der noen kort strekker seg over flere kolonner eller rader.",
   template: problem,
   solution: solution,
 };

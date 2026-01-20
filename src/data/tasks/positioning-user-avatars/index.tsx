@@ -6,7 +6,7 @@ export const userAvatarsTask: Task = {
   id: "positioning-user-avatars",
   title: "User Avatars",
   description:
-    "Create overlapping circular avatars that take up less horizontal space.",
+    "Lag overlappende sirkulære avatarer som tar mindre horisontal plass.",
   template: problem,
   solution: solution,
 };

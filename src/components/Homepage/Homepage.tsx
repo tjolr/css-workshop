@@ -156,7 +156,7 @@ export function Homepage() {
             >
               {'\u00A0'}
             </span>
-            {'circles'.split('').map((char, i) => (
+            {'sirkler'.split('').map((char, i) => (
               <span
                 key={`label-${i}`}
                 className="counter-char"
@@ -172,7 +172,7 @@ export function Homepage() {
               e.stopPropagation();
               setSpawnedCircles([]);
             }}
-            aria-label="Reset circles"
+            aria-label="Nullstill sirkler"
           >
             <FontAwesomeIcon icon={faRotateLeft} />
           </button>

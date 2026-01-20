@@ -6,7 +6,7 @@ export const tooltipTask: Task = {
   id: "positioning-tooltip",
   title: "Tooltip",
   description:
-    "Position a tooltip above a button, centered horizontally with an arrow.",
+    "Plasser en tooltip over en knapp, sentrert horisontalt med en pil.",
   template: problem,
   solution: solution,
 };

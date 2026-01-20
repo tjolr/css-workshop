@@ -6,7 +6,7 @@ export const nestingCardTask: Task = {
   id: "nesting-card",
   title: "Nested Card",
   description:
-    "Refactor flat CSS into nested CSS. Move all the child selectors inside the .card parent to keep related styles grouped together.",
+    "Refaktorer flat CSS til nested CSS. Flytt alle child-selektorene inn i .card-forelderen for å holde relaterte stiler gruppert sammen.",
     link: "https://www.youtube.com/watch?v=h4Xp1QgNkhU",
   template: problem,
   solution: solution,

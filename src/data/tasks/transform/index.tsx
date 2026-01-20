@@ -6,7 +6,7 @@ export const transformTask: Task = {
   id: "transform",
   title: "Transform",
   description:
-    "Recreate the Slack emoji reaction popup using CSS transforms, transition and background colors",
+    "Gjenskape Slack sin emoji-reaksjons-popup ved hjelp av CSS transforms, transition og bakgrunnsfarger.",
   template: problem,
   solution: solution,
 };

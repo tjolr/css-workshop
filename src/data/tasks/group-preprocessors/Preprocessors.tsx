@@ -30,6 +30,10 @@ export const Preprocessors = () => (
       <div className="question-card">
         <h3>4. Hvordan påvirkes ytelse av build vs runtime i CSS-in-JS løsningene?</h3>
       </div>
+
+      <div className="question-card bonus">
+        <h3>Bonusoppgave: Lag stiler til en toast-komponent med ulike farger ved bruk av SCSS mixins. Mixin skal ta inn bakgrunnsfarge, tekstfarge og ikonfarge som argument, og støtte temafarger for success, warning, error og info.</h3>
+      </div>
     </section>
 
   </div>

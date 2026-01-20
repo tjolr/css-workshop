@@ -6,7 +6,7 @@ export const inputIconsTask: Task = {
   id: "positioning-input-icons",
   title: "Input with Icons",
   description:
-    "Position icons inside an input field - search icon on the left, clear button on the right.",
+    "Plasser ikoner inne i et input-felt - søkeikon til venstre, tøm-knapp til høyre.",
   template: problem,
   solution: solution,
 };

@@ -6,7 +6,7 @@ export const glassmorphismTask: Task = {
   id: "glassmorphism",
   title: "Glassmorphism",
   description:
-    "Create a frosted glass card effect using backdrop-filter and semi-transparent backgrounds.",
+    "Lag en frosted glass-effekt på et kort ved hjelp av backdrop-filter og semi-transparente bakgrunner.",
   template: problem,
   solution: solution,
 };

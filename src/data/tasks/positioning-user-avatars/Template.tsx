@@ -11,7 +11,7 @@ export const Template = ({ styles }: TemplateProps) => (
         <img
           key={id}
           className={styles.avatar}
-          src={`https://i.pravatar.cc/100?img=${id}`}
+          src={`https://i.pravatar.cc/200?img=${id}`}
           alt={`User ${id}`}
         />
       ))}

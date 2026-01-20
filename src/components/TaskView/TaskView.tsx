@@ -26,18 +26,18 @@ export function TaskView({ task }: TaskViewProps) {
       )}
       {task.link && (
         <a className="task-view-link" href={task.link} target="_blank" rel="noopener noreferrer">
-           Preliminary knowledge <FontAwesomeIcon icon={faExternalLink} />
+           Forkunnskap <FontAwesomeIcon icon={faExternalLink} />
         </a>
       )}
       <div className="task-view-panels">
         <div className="task-view-panel">
-          <h3 className="task-view-panel-title">Task</h3>
+          <h3 className="task-view-panel-title">Oppgave</h3>
           <div className="task-view-panel-content">
             {task.template}
           </div>
         </div>
         <div className="task-view-panel">
-          <h3 className="task-view-panel-title">Solution</h3>
+          <h3 className="task-view-panel-title">Løsning</h3>
           <div className="task-view-panel-content">
             {task.solution}
           </div>
