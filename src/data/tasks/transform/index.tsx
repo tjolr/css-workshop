@@ -7,6 +7,7 @@ export const transformTask: Task = {
   title: "Transform",
   description:
     "Gjenskape Slack sin emoji-reaksjons-popup ved hjelp av CSS transforms, transition og bakgrunnsfarger.",
+  link: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform",
   template: problem,
   solution: solution,
 };

@@ -7,6 +7,7 @@ export const clampSizingTask: Task = {
   title: "Clamp Sizing",
   description:
     "Bruk clamp() for å lage et responsivt kort som har en minimumsbredde (300px), en maksbredde (600px), og en optimal mellomverdi (50vw).",
+  link: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp",
   template: problem,
   solution: solution,
 };

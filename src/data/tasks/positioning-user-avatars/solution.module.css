@@ -15,9 +15,10 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 8px solid var(--color-bg-elevated);
   object-fit: cover;
-
+  
+  border: 8px solid var(--color-bg-elevated);
+  
   &:not(:first-child) {
     margin-left: -30px;
   }

@@ -7,6 +7,7 @@ export const notificationBadgeTask: Task = {
   title: "Notification Badge",
   description:
     "Gjenskape en Facebook-lignende varselindikator på et bjelle-ikon ved hjelp av absolute/relative positioning.",
+  link: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position",
   template: problem,
   solution: solution,
 };

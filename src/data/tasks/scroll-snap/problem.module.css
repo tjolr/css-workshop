@@ -24,7 +24,7 @@
   overflow-x: auto;
   padding: 8px 0;
   /* TODO: Legg til scroll-snap-type for horisontal snapping
-     Bruk "x mandatory" for å tvinge snapping */
+     Bruk "x mandatory" for å tvinge snapping i x-retningen */
 
 }
 

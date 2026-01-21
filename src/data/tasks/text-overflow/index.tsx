@@ -7,6 +7,7 @@ export const textOverflowTask: Task = {
   title: "Text Overflow",
   description:
     "Lag kort-komponenter der lange tekster trunkeres med ellipsis etter et gitt antall linjer ved hjelp av -webkit-line-clamp.",
+  link: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-overflow",
   template: problem,
   solution: solution,
 };

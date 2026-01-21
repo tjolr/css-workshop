@@ -8,6 +8,7 @@
 }
 
 .inputWrapper {
+  /* Her har vi relative positioning som vi vil bruke til å positionere ikonerne */
   position: relative;
   width: 450px;
 }

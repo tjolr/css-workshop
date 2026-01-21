@@ -32,21 +32,23 @@
 }
 
 .searchIcon {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+
   position: absolute;
   left: 18px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  font-size: 1.25rem;
-  color: var(--color-text-muted);
 }
 
 .clearIcon {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  
   position: absolute;
   right: 18px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.25rem;
-  color: var(--color-text-muted);
-  cursor: pointer;
 }

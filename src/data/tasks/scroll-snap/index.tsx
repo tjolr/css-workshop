@@ -7,6 +7,7 @@ export const scrollSnapTask: Task = {
   title: "Scroll Snap",
   description:
     "Lag et horisontalt bildegalleri med scroll-snap-type og scroll-snap-align som snapper til hvert bilde.",
+  link: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type",
   template: problem,
   solution: solution,
 };
